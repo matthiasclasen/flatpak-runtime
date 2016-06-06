@@ -21,21 +21,63 @@
     "check-groups": { "type": "file", "filename": "group" },
 
     "packages": [
+        /* base system */
         "centos-release",
         "basesystem",
         "glibc",
         "bash",
         "setup",
+        "coreutils",
+        "util-linux",
         "rpm",
+        "which",
+        "curl",
+        "findutils",
+        /* crypto and compression */
         "gnupg2",
         "xz",
         "gzip",
         "bzip2",
-        "coreutils",
-        "util-linux",
-        "which",
-        "curl",
-        "findutils"
+        /* image libraries */
+        "libpng",
+        "libjpeg-turbo",
+        /* X11 libraries */
+        "libICE",
+        "libSM",
+        "libX11",
+        "libXScrnSaver",
+        "libXau",
+        "libXcomposite",
+        "libXcursor",
+        "libXdamage",
+        "libXext",
+        "libXfixes",
+        "libXft",
+        "libXi",
+        "libXinerama",
+        "libXpm",
+        "libXrandr",
+        "libXrender",
+        "libXt",
+        "libXtst",
+        "libXv",
+        "libXxf86vm",
+        "xcb-util",
+        "libXfont",
+        "libfontenc",
+        "xorg-x11-font-utils",
+        "ttmkfdir",
+        /* mesa */
+        "mesa-libEGL",
+        "mesa-libglapi",
+        "mesa-libgbm",
+        "mesa-libGL",
+        "mesa-dri-drivers",
+        "mesa-libGLU",
+        "libGLEW",
+        /* pulseaudio */
+        "pulseaudio-libs",
+        "pulseaudio-libs-glib2"
     ]
 }
 
