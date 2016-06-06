@@ -35,15 +35,19 @@ repo/refs/heads/runtime/org.flatpak.Sdk.Var/$(ARCH)/$(VERSION): repo/refs/heads/
 
 exportrepo/refs/heads/runtime/org.flatpak.Runtime/$(ARCH)/$(VERSION): repo/refs/heads/runtime/org.flatpak.Runtime/$(ARCH)/$(VERSION) exportrepo/config
 	ostree pull-local --repo=exportrepo repo runtime/org.flatpak.Runtime/$(ARCH)/$(VERSION)
+	flatpak build-update-repo exportrepo
 
 exportrepo/refs/heads/runtime/org.flatpak.Runtime.Var/$(ARCH)/$(VERSION): repo/refs/heads/runtime/org.flatpak.Runtime.Var/$(ARCH)/$(VERSION) exportrepo/config
 	ostree pull-local --repo=exportrepo repo runtime/org.flatpak.Runtime.Var/$(ARCH)/$(VERSION)
+	flatpak build-update-repo exportrepo
 
 exportrepo/refs/heads/runtime/org.flatpak.Sdk/$(ARCH)/$(VERSION): repo/refs/heads/runtime/org.flatpak.Sdk/$(ARCH)/$(VERSION) exportrepo/config
 	ostree pull-local --repo=exportrepo repo runtime/org.flatpak.Sdk/$(ARCH)/$(VERSION)
+	flatpak build-update-repo exportrepo
 
 exportrepo/refs/heads/runtime/org.flatpak.Sdk.Var/$(ARCH)/$(VERSION): repo/refs/heads/runtime/org.flatpak.Sdk.Var/$(ARCH)/$(VERSION) exportrepo/config
 	ostree pull-local --repo=exportrepo repo runtime/org.flatpak.Sdk.Var/$(ARCH)/$(VERSION)
+	flatpak build-update-repo exportrepo
 
 platform: exportrepo/refs/heads/runtime/org.flatpak.Runtime/$(ARCH)/$(VERSION) exportrepo/refs/heads/runtime/org.flatpak.Runtime.Var/$(ARCH)/$(VERSION)
 
