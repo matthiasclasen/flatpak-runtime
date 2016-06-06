@@ -1,0 +1,29 @@
+{
+    "ref": "base/org.flatpak.Sdk/x86_64/1",
+    "include": "flatpak-runtime.json",
+    "packages": [
+        "centos-release",
+        "basesystem",
+        "glibc",
+        "bash",
+        "setup",
+        "rpm",
+        "gnupg2",
+        "xz",
+        "gzip",
+        "bzip2",
+        "coreutils",
+        "util-linux",
+        "which",
+        "curl",
+        "findutils",
+
+        "valgrind",
+        "strace",
+        "gdb",
+        "cpio",
+        "rpm-build",
+        "yum"
+    ]
+}
+

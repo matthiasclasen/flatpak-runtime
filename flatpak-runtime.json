@@ -1,0 +1,41 @@
+{
+    "ref": "base/org.flatpak.Runtime/x86_64/1",
+
+    "repos": ["centos-base", "centos-updates"],
+
+    "selinux": false,
+
+    "documentation": false,
+
+    "container": true,
+
+    "automatic_version_prefix": "7",
+
+    "postprocess-script": "treecompose-post.sh",
+
+    "etc-group-members": ["wheel"],
+
+    "ignore-removed-users": ["root"],
+    "ignore-removed-groups": ["root"],
+    "check-passwd": { "type": "file", "filename": "passwd" },
+    "check-groups": { "type": "file", "filename": "group" },
+
+    "packages": [
+        "centos-release",
+        "basesystem",
+        "glibc",
+        "bash",
+        "setup",
+        "rpm",
+        "gnupg2",
+        "xz",
+        "gzip",
+        "bzip2",
+        "coreutils",
+        "util-linux",
+        "which",
+        "curl",
+        "findutils"
+    ]
+}
+
