@@ -33,6 +33,8 @@
         "which",
         "curl",
         "findutils",
+        "hicolor-icon-theme",
+        "shared-mime-info",
         /* crypto and compression */
         "gnupg2",
         "xz",
@@ -67,6 +69,7 @@
         "libfontenc",
         "xorg-x11-font-utils",
         "ttmkfdir",
+        "dejavu-fonts-common",
         /* mesa */
         "mesa-libEGL",
         "mesa-libglapi",
